@@ -1,0 +1,9 @@
+Question: 
+
+- If you create a constructor method to build a DVD by title then create a constructor method to build a DVD by category. 
+  Does JAVA allow you to do this? 
+Answer: JAVA does not allow us to do that because the java allow overloading methods only if they have the different signatures which are:
+-Having the different number of arguments
+-Or having same number of arguments but different arguments datatype
+And the constructor title and category have the same number of arguments(1) but they have the same different arguments datatype String
+So JAVA will not allow us to do that.
