@@ -9,7 +9,7 @@ public class Aims {
     private static Cart cart = new Cart();
 
     public static void main(String[] args) {
-        showMenu();
+        showMenu(); 
         handleMainMenuInput();
     }
 
