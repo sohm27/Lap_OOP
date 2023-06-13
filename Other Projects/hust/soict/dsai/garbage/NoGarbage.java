@@ -1,7 +1,7 @@
 package hust.soict.dsai.garbage;
-public class GarbageCreator {
+public class NoGarbage {
 	public static void main(String[] args) {
-		String garbage = "";
+    StringBuilder garbage=new StringBuilder();
 		int i = 0;
 		while (i<1234567) {
 			garbage += i;
@@ -9,4 +9,4 @@ public class GarbageCreator {
 			i ++;
 		}
 	}
-}   
+}

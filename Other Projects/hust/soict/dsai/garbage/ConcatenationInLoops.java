@@ -19,5 +19,3 @@ public static void main(String[] args) {
 		}
 		s = sb.toString();
 		System.out.println(System.currentTimeMillis() - start);
-	}
-}
