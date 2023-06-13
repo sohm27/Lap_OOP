@@ -22,7 +22,7 @@ public class Aims {
         System.out.println("0. Exit");
         System.out.println("--------------------------------");
         System.out.println("Please choose a number: 0-1-2-3");
-    }
+    } 
 
     public static void handleMainMenuInput() {
         Scanner scanner = new Scanner(System.in);
