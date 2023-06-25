@@ -1,9 +1,5 @@
-package src.hust.soict.dsai.aims.exception;
+package hust.soict.dsai.aims.exception;
 public class PlayerException extends Exception {
-
-	public PlayerException() {
-		// TODO Auto-generated constructor stub
-	}
 
 	public PlayerException(String message) {
 		super(message);
@@ -22,6 +18,9 @@ public class PlayerException extends Exception {
 
 	public PlayerException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
 		super(message, cause, enableSuppression, writableStackTrace);
+		// TODO Auto-generated constructor stub
+	}
+	public PlayerException() {
 		// TODO Auto-generated constructor stub
 	}
 
