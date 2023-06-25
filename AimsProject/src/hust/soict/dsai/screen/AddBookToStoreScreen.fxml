@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.hust.soict.dsai.screen.AddBookToStoreScreenController">
+    <children>
+        <MenuItem fx:id="optionViewCart" onAction="#ViewCartPressed" text="View Cart" />
+        <TextField fx:id="bookAuthors" layoutX="93.0" layoutY="47.0" promptText="Authors" />
+        <TextField fx:id="bookCategory" layoutX="93.0" layoutY="82.0" promptText="Category" />
+        <TextField fx:id="bookCost" layoutX="93.0" layoutY="117.0" promptText="Cost" />
+        <TextField fx:id="bookID" layoutX="93.0" layoutY="12.0" promptText="ID" />
+        <TextField fx:id="bookTitle" layoutX="93.0" layoutY="152.0" promptText="Title" />
+        <Button fx:id="btnAddBookStore" layoutX="23.0" layoutY="336.0" mnemonicParsing="false" onAction="#btnAddBookPressed" text="Add Book" />
+        <MenuItem fx:id="optionViewStore" onAction="#ViewStorePressed" text="View Store" />
+    </children>
+</AnchorPane>

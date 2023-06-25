@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.hust.soict.dsai.screen.AddDigitalVideoDiscToStoreScreenController">
+    <children>
+        <Button fx:id="DVDAddButton" layoutX="23.0" layoutY="336.0" mnemonicParsing="false" onAction="#DVDButtonPressed" text="Add DVD" />
+        <TextField fx:id="DVDCategory" layoutX="93.0" layoutY="47.0" promptText="Category" />
+        <TextField fx:id="DVDCost" layoutX="93.0" layoutY="82.0" promptText="Cost" />
+        <TextField fx:id="DVDDirector" layoutX="93.0" layoutY="117.0" promptText="Director" />
+        <TextField fx:id="DVDLength" layoutX="93.0" layoutY="152.0" promptText="Length" />
+        <TextField fx:id="DVDTitle" layoutX="93.0" layoutY="187.0" promptText="Title" />
+        <MenuItem fx:id="viewCart" onAction="#viewCartPressed" text="View Cart" />
+        <MenuItem fx:id="optionViewStore" onAction="#viewStorePressed" text="View Store" />
+    </children>
+</AnchorPane>

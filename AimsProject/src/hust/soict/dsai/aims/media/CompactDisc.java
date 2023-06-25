@@ -35,13 +35,29 @@ public class CompactDisc extends Disc{
         }
         return totalLength;
     }
-    @Override
-    public void play() {
-        System.out.println("Playing CompactDisc: " + getTitle());
-        System.out.println("Artist: " + getArtist());
-        System.out.println("Tracks:");
-        for (Track track : tracks) {
-            track.play();
-        }
+    public void play() throws PlayerException {
+    	
+        if (this.getLength()>0) {
+        	java.util.Iterator iter=tracks.iterator();
+        	Track nextTrack;
+        	while (iter.hasNext()) {
+        		nextTrack=(Track) iter.next();
+        		try {
+        			nextTrack.play();
+        		}catch (PlayerException e) {
+					// TODO: handle exception
+        			throw e;
+				}
+        	}
+        } else throw new PlayerException("ERROR: CD length is non-positive");
     }
+    public String toString() {
+        return "CD info: " + this.getId()
+        + " - " + this.getTitle()
+		+ " - " + this.getCategory()
+		+ " - " + this.getArtist()
+		+ " - " + this.tracks
+		+ ": " + this.getCost() + " $";
+	}
+	
 }
