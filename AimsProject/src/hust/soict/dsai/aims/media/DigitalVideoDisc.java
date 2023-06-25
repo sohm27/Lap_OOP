@@ -24,9 +24,14 @@ public class DigitalVideoDisc extends Disc {
 		this.title=title2;
 		
 	}
-	@Override
-	public void play() {
-		System.out.println("Playing DigitalVideoDisc: " + getTitle());
+	public String toString() {
+        return "DVD info: " + this.getId()
+        + " - " + this.getTitle()
+		+ " - " + this.getCategory()
+		+ " - " + this.getDirector()
+		+ " - " + this.getLength()
+		+ ": " + this.getCost() + " $";
+	}
 		
 	}
 	@Override
