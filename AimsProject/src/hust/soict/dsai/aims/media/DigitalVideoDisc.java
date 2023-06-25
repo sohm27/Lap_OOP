@@ -29,5 +29,13 @@ public class DigitalVideoDisc extends Disc {
 		System.out.println("Playing DigitalVideoDisc: " + getTitle());
 		
 	}
+	@Override
+        public void play() throws PlayerException {
+		// TODO Auto-generated method stub
+        if (this.getLength()>0) {
+		System.out.println("p");
+    	} else throw new PlayerException("Error: Length cannot be non-positive!");
+
+	}
 
 } 
